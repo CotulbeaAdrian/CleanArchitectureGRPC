@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="coverlet.collector" Version="6.0.0" />
+		<PackageReference Include="Google.Protobuf" Version="3.27.1" />
+		<PackageReference Include="Grpc.Net.Client" Version="2.63.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.64.0">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.6" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+		<PackageReference Include="Moq" Version="4.20.70" />
+		<PackageReference Include="xunit" Version="2.5.3" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CleanArchitectureGRPC.API\CleanArchitectureGRPC.API.csproj" />
+		<ProjectReference Include="..\CleanArchitectureGRPC.Application\CleanArchitectureGRPC.Application.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="..\CleanArchitectureGRPC.API\Protos\greet.proto" GrpcServices="Client" />
+	</ItemGroup>
+
+</Project>
