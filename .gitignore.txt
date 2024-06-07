@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# Unignore directories
+!*/
+
+# Unignore C# class files and project files
+!*.cs
+!*.csproj
+!*.sln
+
+# If you have a specific folder structure, unignore those directories
+!src/
+!project/
