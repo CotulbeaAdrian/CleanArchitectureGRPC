@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureGRPC.API", "CleanArchitectureGRPC.API\CleanArchitectureGRPC.API.csproj", "{9BCDA931-E500-4467-AFD4-7B69A7FF30AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureGRPC.Api", "CleanArchitectureGRPC.API\CleanArchitectureGRPC.Api.csproj", "{9BCDA931-E500-4467-AFD4-7B69A7FF30AB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureGRPC.Application", "CleanArchitectureGRPC.Application\CleanArchitectureGRPC.Application.csproj", "{BF69E3DD-F895-4F3C-99F0-2414A12F9289}"
 EndProject
@@ -11,9 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureGRPC.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureGRPC.Infrastructure", "CleanArchitectureGRPC.Infrastructure\CleanArchitectureGRPC.Infrastructure.csproj", "{3DFF6E9B-29C7-47D6-9D0F-CA59B7146767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureGRPC.Tests", "CleanArchitectureGRPC.Tests\CleanArchitectureGRPC.Tests.csproj", "{CD3C476E-320E-4474-B6BB-183D048B34DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureGRPC.IntegrationTests", "CleanArchitectureGRPC.Tests\CleanArchitectureGRPC.IntegrationTests.csproj", "{CD3C476E-320E-4474-B6BB-183D048B34DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureGRPC.Client", "CleanArchitectureGRPC.Client\CleanArchitectureGRPC.Client.csproj", "{74517E35-0967-44DC-95BE-CCFAC4EED2BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureGRPC.Client", "CleanArchitectureGRPC.Client\CleanArchitectureGRPC.Client.csproj", "{74517E35-0967-44DC-95BE-CCFAC4EED2BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{74688BFD-A197-412F-81CC-222967CDC4E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8E00FFA0-41AC-4504-A7C8-C1BF640A9E64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArhitectureGRPC.UnitTests", "CleanArhitectureGRPC.UnitTests\CleanArhitectureGRPC.UnitTests.csproj", "{2B8A8864-F864-47BE-B73F-5FD29FFD2BD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,9 +51,22 @@ Global
 		{74517E35-0967-44DC-95BE-CCFAC4EED2BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74517E35-0967-44DC-95BE-CCFAC4EED2BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74517E35-0967-44DC-95BE-CCFAC4EED2BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8A8864-F864-47BE-B73F-5FD29FFD2BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8A8864-F864-47BE-B73F-5FD29FFD2BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8A8864-F864-47BE-B73F-5FD29FFD2BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8A8864-F864-47BE-B73F-5FD29FFD2BD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BCDA931-E500-4467-AFD4-7B69A7FF30AB} = {8E00FFA0-41AC-4504-A7C8-C1BF640A9E64}
+		{BF69E3DD-F895-4F3C-99F0-2414A12F9289} = {8E00FFA0-41AC-4504-A7C8-C1BF640A9E64}
+		{9F06A756-1261-4190-818E-9FD91795CF48} = {8E00FFA0-41AC-4504-A7C8-C1BF640A9E64}
+		{3DFF6E9B-29C7-47D6-9D0F-CA59B7146767} = {8E00FFA0-41AC-4504-A7C8-C1BF640A9E64}
+		{CD3C476E-320E-4474-B6BB-183D048B34DE} = {74688BFD-A197-412F-81CC-222967CDC4E1}
+		{74517E35-0967-44DC-95BE-CCFAC4EED2BE} = {8E00FFA0-41AC-4504-A7C8-C1BF640A9E64}
+		{2B8A8864-F864-47BE-B73F-5FD29FFD2BD5} = {74688BFD-A197-412F-81CC-222967CDC4E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83726024-83A4-4429-BB4F-F6626837440E}

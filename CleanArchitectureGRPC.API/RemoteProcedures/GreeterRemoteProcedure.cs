@@ -1,14 +1,13 @@
 using CleanArchitectureGRPC.Application.Interfaces;
 using Grpc.Core;
-using System.Threading.Tasks;
 
 namespace CleanArchitectureGRPC.API.Services
 {
-    public class GreeterService : Greeter.GreeterBase
+    public class GreeterRemoteProcedure : Greeter.GreeterBase
     {
         private readonly IGreetingService _greeterService;
 
-        public GreeterService(IGreetingService greeterService)
+        public GreeterRemoteProcedure(IGreetingService greeterService)
         {
             _greeterService = greeterService;
         }

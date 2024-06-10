@@ -28,7 +28,7 @@ namespace CleanArchitectureGRPC.API
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<GreeterService>();
+                endpoints.MapGrpcService<GreeterRemoteProcedure>();
 
                 endpoints.MapGet("/", async context =>
                 {

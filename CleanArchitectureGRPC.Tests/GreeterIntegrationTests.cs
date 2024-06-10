@@ -3,7 +3,7 @@ using Grpc.Net.Client;
 using Xunit;
 using CleanArchitectureGRPC.API;
 
-namespace CleanArchitectureGRPC.Tests.IntegrationTests
+namespace CleanArchitectureGRPC.Tests
 {
     public class GreeterIntegrationTests
     {

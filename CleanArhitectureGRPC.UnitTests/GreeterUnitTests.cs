@@ -5,11 +5,11 @@ using Xunit;
 
 namespace CleanArchitectureGRPC.Tests.UnitTests
 {
-    public class GreeterServiceTests
+    public class GreeterUnitTests
     {
         private readonly IGreetingService _greeterService;
 
-        public GreeterServiceTests()
+        public GreeterUnitTests()
         {
             _greeterService = new GreetingService();
         }

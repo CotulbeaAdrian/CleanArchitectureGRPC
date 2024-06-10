@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitectureGRPC.API\CleanArchitectureGRPC.API.csproj" />
+    <ProjectReference Include="..\CleanArchitectureGRPC.API\CleanArchitectureGRPC.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>
