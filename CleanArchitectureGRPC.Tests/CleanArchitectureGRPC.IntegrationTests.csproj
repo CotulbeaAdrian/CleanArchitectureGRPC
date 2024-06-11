@@ -24,9 +24,4 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\CleanArchitectureGRPC.API\CleanArchitectureGRPC.Api.csproj" />
 	</ItemGroup>
-
-	<ItemGroup>
-		<Protobuf Include="..\CleanArchitectureGRPC.API\Protos\greet.proto" GrpcServices="Client" />
-	</ItemGroup>
-
 </Project>

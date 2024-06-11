@@ -2,6 +2,7 @@
 using Grpc.Net.Client;
 using Xunit;
 using CleanArchitectureGRPC.API;
+using Greet;
 
 namespace CleanArchitectureGRPC.Tests
 {

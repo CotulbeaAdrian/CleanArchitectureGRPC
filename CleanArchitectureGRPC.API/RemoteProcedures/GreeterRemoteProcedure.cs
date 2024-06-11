@@ -1,5 +1,6 @@
 using CleanArchitectureGRPC.Application.Interfaces;
 using Grpc.Core;
+using Greet; // Ensure this namespace matches the generated code
 
 namespace CleanArchitectureGRPC.API.Services
 {

@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Grpc.Net.Client;
 using CleanArchitectureGRPC.API;
+using Greet;
 
 namespace CleanArchitectureGRPC.Client;
 
